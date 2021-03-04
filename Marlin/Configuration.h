@@ -501,9 +501,9 @@
     #define DEFAULT_Ki_LIST {   2.93,   2.93 }
     #define DEFAULT_Kd_LIST {  75.58,  75.58 }
   #else
-    #define DEFAULT_Kp 17.86
-    #define DEFAULT_Ki 1.38
-    #define DEFAULT_Kd 57.79
+    #define DEFAULT_Kp 21.02
+    #define DEFAULT_Ki 1.75
+    #define DEFAULT_Kd 63.28
   #endif
 #endif // PIDTEMP
 
@@ -685,7 +685,7 @@
 #define Z_DRIVER_TYPE  TMC2208_STANDALONE
 //#define X2_DRIVER_TYPE A4988
 //#define Y2_DRIVER_TYPE A4988
-//#define Z2_DRIVER_TYPE A4988
+#define Z2_DRIVER_TYPE TMC2208_STANDALONE
 //#define Z3_DRIVER_TYPE A4988
 //#define Z4_DRIVER_TYPE A4988
 #define E0_DRIVER_TYPE TMC2208_STANDALONE
@@ -1315,7 +1315,7 @@
 
   //#define MESH_EDIT_GFX_OVERLAY   // Display a graphics overlay while editing the mesh
 
-  #define MESH_INSET 1              // Set Mesh bounds as an inset region of the bed
+  #define MESH_INSET 35             // Set Mesh bounds as an inset region of the bed
   #define GRID_MAX_POINTS_X 10      // Don't use more than 15 points per axis, implementation limited.
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
